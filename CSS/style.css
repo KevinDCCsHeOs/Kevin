@@ -1,0 +1,49 @@
+* {
+    background-color: black;   
+}
+
+body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: red;
+    text-align: center;
+    padding: 20px 25px;
+    background-color: darkblue;
+}
+
+li a:hover {
+    background-image: url('https://i.pinimg.com/originals/62/c9/3a/62c93a4cf6462f54fdea6d735d927f9c.gif');
+    padding: 40px 50px;
+}
+
+li a:active {
+    background-color: white;
+    font-size: 40px;
+}
+
+img {
+    width: 500px;
+    border-radius: 40%;
+    overflow: hidden;
+}

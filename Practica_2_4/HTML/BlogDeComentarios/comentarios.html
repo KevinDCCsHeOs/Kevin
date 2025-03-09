@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Página de comentarios del Blog de la Guía Turística.">
+        <meta name="keywords" content="comentarios, blog, guía turística, opiniones">
+        <title>Comentarios - Blog Guía Turística</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f9f9f9;
+            }
+            header, nav, main, aside, footer {
+                margin-bottom: 20px;
+                padding: 15px;
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            header h1 {
+                margin: 0;
+            }
+            nav a {
+                margin-right: 15px;
+                text-decoration: none;
+                color: #2980B9;
+            }
+            main section {
+                margin-bottom: 30px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            form label {
+                margin-top: 10px;
+            }
+            form input, form textarea {
+                padding: 8px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            form button {
+                margin-top: 15px;
+                padding: 10px;
+                background: #2980B9;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .comentario {
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            .comentario:last-child {
+                border-bottom: none;
+            }
+            aside {
+                background: #e8f4f8;
+                padding: 10px;
+            }
+            footer p {
+                text-align: center;
+                font-size: 0.9em;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Comentarios del Blog</h1>
+        </header>
+        <nav>
+            <a href="../../index.html">Inicio</a>
+            <a href="../GuiaTuristica/inicio.html">Inicio de Gu&iacute;a Tur&iacute;stica</a>
+            <a href="../GuiaTuristica/lugares.html">Lugares de Inter&eacute;s</a>
+            <a href="../GuiaTuristica/mapa.html">Mapa</a>
+            <a href="../GuiaTuristica/contacto.html">Contacto</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Deja tu Comentario</h2>
+                <form action="procesar_comentario.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </section>
+            <section>
+                <h2>Comentarios Recientes</h2>
+                <div class="comentario">
+                    <p><strong>Juan Pérez</strong> <em>01/03/2025</em></p>
+                    <p>Excelente guía turística, muy informativa y práctica. Me encantó la sección de lugares de interés.</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>María García</strong> <em>28/02/2025</em></p>
+                    <p>Muy buen contenido, la información es muy útil para planificar mi próxima visita a la ciudad.</p>
+                </div>
+                <div class="comentario">
+                    <p><strong>Pedro Flores</strong> <em>09/12/2024</em></p>
+                    <p>Perfecto conteniddo, esta informaci&oacute;n es muy util para visitar buenos lugares en la ciudad, de esta forma podemos ahorrar tiempo.</p>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <h3>Información Adicional</h3>
+            <p>Para más detalles sobre la guía turística, visita nuestra página de <a href="../GuiaTuristica/contacto.html">Contacto</a>.</p>
+        </aside>
+        <footer>
+            <p>&copy; 2025 Guía Turística de Orizaba. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
